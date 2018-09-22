@@ -110,6 +110,14 @@ class TicTacToe
     end
   end
   
+  def draw?()
+    if full?() && !won?() 
+      return true
+    else
+      return false
+    end
+  end
+  
   def over?() 
     board = @board
     if won?() || draw?() || full?()
