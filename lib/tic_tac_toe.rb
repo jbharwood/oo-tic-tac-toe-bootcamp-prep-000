@@ -101,5 +101,12 @@ class TicTacToe
     end
   end
 
+  def full?(board)
+    if board.find {|i| i == " " || i == nil}
+      return false
+    else
+      return true
+    end
+  end
   
 end
