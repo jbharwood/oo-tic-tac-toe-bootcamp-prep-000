@@ -33,6 +33,7 @@ class TicTacToe
     board = @board
     board[index] = character
   end
-
+  
+  
   
 end
