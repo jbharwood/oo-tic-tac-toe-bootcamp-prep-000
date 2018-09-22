@@ -111,6 +111,7 @@ class TicTacToe
   end
   
   def over?() 
+    board = @board
     if won?() || draw?() || full?(
       return true
     else
@@ -119,6 +120,7 @@ class TicTacToe
   end
 
   def winner()
+    board = @board
     if win_combination = won?()
       board[win_combination.first]
     end
