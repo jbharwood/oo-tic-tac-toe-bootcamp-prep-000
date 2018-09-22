@@ -79,7 +79,8 @@ class TicTacToe
     end
   end
   
-  def won?(board)
+  def won?()
+    board = @board
     WIN_COMBINATIONS.each do |win|
       win_index_1 = win[0]
       win_index_2 = win[1]
